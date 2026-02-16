@@ -1,0 +1,1239 @@
+
+<!doctype html>
+<html lang="en" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aatmanirbhar MSME &amp; Startup Awards 2026</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="/_sdk/element_sdk.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <style>
+    body {
+      box-sizing: border-box;
+      background-color: #F5F1E8;
+      color: #1A2B4D;
+    }
+
+    * {
+      font-family: 'Anek Devanagari', sans-serif;
+    }
+
+    h1, h2, h3, h4, h5, h6, .heading-font {
+      font-family: 'Anek Devanagari', sans-serif;
+      font-weight: 700;
+    }
+
+    .gov-bg {
+      background: linear-gradient(135deg, #1A2B4D 0%, #2C3E5F 50%, #1A2B4D 100%);
+    }
+
+    .gov-card {
+      background-color: #F5F1E8;
+      border-left: 5px solid #D4AF37;
+    }
+
+    .gov-accent {
+      color: #D4AF37;
+    }
+
+    .gov-button {
+      background-color: #1A2B4D;
+      color: #F5F1E8;
+      border: 2px solid #D4AF37;
+      transition: all 0.3s ease;
+    }
+
+    .gov-button:hover {
+      background-color: #D4AF37;
+      color: #1A2B4D;
+    }
+
+    .gov-header {
+      background: linear-gradient(180deg, #1A2B4D 0%, #2C3E5F 100%);
+      border-bottom: 3px solid #D4AF37;
+    }
+
+    .seal {
+      width: 80px;
+      height: 80px;
+      border: 3px solid #D4AF37;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #1A2B4D, #2C3E5F);
+      color: #D4AF37;
+      font-size: 40px;
+      font-weight: bold;
+    }
+
+    @keyframes slide-up {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .animate-slide-up {
+      animation: slide-up 0.8s ease-out forwards;
+    }
+
+    .stagger-1 { animation-delay: 0.1s; }
+    .stagger-2 { animation-delay: 0.2s; }
+    .stagger-3 { animation-delay: 0.3s; }
+    .stagger-4 { animation-delay: 0.4s; }
+    .stagger-5 { animation-delay: 0.5s; }
+
+    .timeline-dot {
+      width: 20px;
+      height: 20px;
+      background: #D4AF37;
+      border: 3px solid #1A2B4D;
+      border-radius: 50%;
+    }
+
+    .timeline-line {
+      width: 3px;
+      background: linear-gradient(180deg, #D4AF37 0%, #1A2B4D 100%);
+    }
+
+    .divider-line {
+      height: 2px;
+      background: linear-gradient(90deg, #1A2B4D 0%, #D4AF37 50%, #1A2B4D 100%);
+    }
+
+    .category-icon {
+      width: 60px;
+      height: 60px;
+      background-color: #E8DCC8;
+      border: 2px solid #D4AF37;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+    }
+
+    .jury-profile-img {
+      width: 8rem;
+      height: 8rem;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #D4AF37;
+      box-shadow: 0 4px 14px rgba(212, 175, 55, 0.35);
+    }
+
+    @media (min-width: 768px) {
+      .jury-profile-img {
+        width: 10rem;
+        height: 10rem;
+        border-width: 5px;
+      }
+    }
+
+    .hero-slide {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+      opacity: 0;
+      transition: opacity 0.6s ease-in-out;
+    }
+    .hero-slide.active {
+      opacity: 1;
+      z-index: 1;
+    }
+    .hero-dot {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: rgba(255,255,255,0.6);
+      border: 2px solid rgba(26,43,77,0.6);
+      cursor: pointer;
+      transition: transform 0.2s, background-color 0.2s, border-color 0.2s;
+    }
+    .hero-dot:hover {
+      background-color: rgba(255,255,255,0.9);
+    }
+    .hero-dot.active {
+      background-color: #fff;
+      border-color: #1A2B4D;
+      transform: scale(1.25);
+    }
+
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #F5F1E8;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #D4AF37;
+      border-radius: 5px;
+    }
+  </style>
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="h-full">
+  <div id="app-wrapper" class="w-full h-full overflow-auto"><!-- Header/Navigation -->
+   <header class="gov-header sticky top-0 z-50 py-4 shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+     <div class="flex items-center justify-between">
+      <div class="flex items-center gap-4">
+       <div class="seal flex items-center justify-center p-1">
+        <span class="w-full h-full rounded-full bg-white flex items-center justify-center p-1.5">
+         <img src="images/cimsme logo .png" alt="CIMSME Logo" class="w-full h-full object-contain">
+        </span>
+       </div>
+       <div>
+        <h1 class="heading-font text-2xl font-black text-white">Aatmanirbhar Bharat</h1>
+        <p class="text-xs gov-accent font-semibold">Chamber of Indian Micro, Small and Medium Enterprises</p>
+       </div>
+      </div>
+      <nav class="hidden md:flex items-center gap-8"><a href="#categories" class="text-white hover:text-yellow-300 transition-colors font-semibold">Categories</a> <a href="#timeline" class="text-white hover:text-yellow-300 transition-colors font-semibold">Timeline</a> <a href="#jury" class="text-white hover:text-yellow-300 transition-colors font-semibold">Jury</a> <a href="#apply" class="text-white hover:text-yellow-300 transition-colors font-semibold">Apply</a> <a href="#sponsors" class="text-white hover:text-yellow-300 transition-colors font-semibold">Sponsorship</a> <a href="#contact" class="text-white hover:text-yellow-300 transition-colors font-semibold">Contact</a>
+      </nav><button id="mobile-menu-btn" class="md:hidden p-2">
+       <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+       </svg></button>
+     </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-gradient-to-b from-blue-900 to-blue-800 mt-4">
+     <div class="px-4 py-4 space-y-3"><a href="#categories" class="block text-white hover:text-yellow-300 py-2">Categories</a> <a href="#timeline" class="block text-white hover:text-yellow-300 py-2">Timeline</a> <a href="#jury" class="block text-white hover:text-yellow-300 py-2">Jury</a> <a href="#apply" class="block text-white hover:text-yellow-300 py-2">Apply</a> <a href="#sponsors" class="block text-white hover:text-yellow-300 py-2">Sponsorship</a> <a href="#contact" class="block text-white hover:text-yellow-300 py-2">Contact</a>
+     </div>
+    </div>
+   </header><!-- Hero Section -->
+   <section class="gov-bg py-20 relative overflow-hidden"><!-- Decorative Elements -->
+    <div class="absolute top-0 left-0 w-96 h-96 opacity-10">
+     <svg viewbox="0 0 100 100" fill="none" stroke="#D4AF37" stroke-width="0.5"><circle cx="50" cy="50" r="40" /> <circle cx="50" cy="50" r="30" /> <circle cx="50" cy="50" r="20" />
+     </svg>
+    </div>
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+     <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div>
+       <div class="mb-8 animate-slide-up stagger-1 opacity-0">
+        <div class="h-1 w-24 bg-gradient-to-r from-yellow-500 to-yellow-600 mb-6"></div>
+        <h2 id="hero-title" class="heading-font text-5xl md:text-6xl font-black text-white mb-6 leading-tight">Aatmanirbhar MSME &amp; Startup Awards 2026</h2>
+        <p id="hero-subtitle" class="text-xl text-yellow-100 mb-4">Celebrating Grit, Innovation &amp; Impact — India's Future Leaders!</p>
+        <p id="hero-tagline" class="text-lg text-yellow-50 italic">"Recognizing the Spirit of Self-Reliance, Innovation &amp; Impact"</p>
+       </div>
+       <div class="flex flex-wrap gap-4 animate-slide-up stagger-2 opacity-0"><a href="#apply" class="gov-button px-8 py-3 font-bold rounded-md"> APPLY NOW </a> <a href="#categories" class="gov-button px-8 py-3 font-bold rounded-md"> VIEW CATEGORIES </a>
+       </div>
+       <div class="grid grid-cols-2 gap-4 mt-12 animate-slide-up stagger-3 opacity-0">
+        <div class="bg-white/10 backdrop-blur-sm rounded-md p-4 border-l-4 border-yellow-500">
+         <div class="text-3xl font-bold gov-accent">
+          10+
+         </div>
+         <div class="text-sm text-white mt-1">
+          Award Categories
+         </div>
+        </div>
+        <div class="bg-white/10 backdrop-blur-sm rounded-md p-4 border-l-4 border-yellow-500">
+         <div class="text-3xl font-bold gov-accent">
+          500+
+         </div>
+         <div class="text-sm text-white mt-1">
+          Expected Nominations
+         </div>
+        </div>
+        <div class="bg-white/10 backdrop-blur-sm rounded-md p-4 border-l-4 border-yellow-500">
+         <div class="text-3xl font-bold gov-accent">
+          50+
+         </div>
+         <div class="text-sm text-white mt-1">
+          Industry Experts
+         </div>
+        </div>
+        <div class="bg-white/10 backdrop-blur-sm rounded-md p-4 border-l-4 border-yellow-500">
+         <div class="text-3xl font-bold gov-accent">
+          100+
+         </div>
+         <div class="text-sm text-white mt-1">
+          Awards
+         </div>
+        </div>
+       </div>
+      </div>
+
+
+
+
+      <div class="animate-slide-up stagger-4 opacity-0">
+       <div class="relative">
+        <div class="absolute -inset-1 rounded-lg transform rotate-3 border-4 border-yellow-500 bg-transparent" style="pointer-events: none;"></div>
+        <div id="hero-slideshow-card" class="relative bg-gray-100 rounded-lg shadow-2xl overflow-hidden" style="width: 100%; aspect-ratio: 4/3;">
+         <div id="hero-slideshow" class="relative w-full h-full bg-gray-100 flex items-center justify-center">
+            <img src="images/img2.jpg" alt="" class="hero-slide w-full h-full">
+          <img src="images/slide-1.png" alt="" class="hero-slide active w-full h-full">
+          <img src="images/1746531014_6819f2c65356c (1).jpg" alt="" class="hero-slide w-full h-full">
+          <img src="images/slide-3.png" alt="" class="hero-slide w-full h-full">
+          <img src="images/slide-4.png" alt="" class="hero-slide w-full h-full">
+          <img src="images/slide-5.png" alt="" class="hero-slide w-full h-full">
+          
+          
+          <div class="hero-slide-dots absolute bottom-4 left-0 right-0 flex justify-center gap-2 z-10">
+           <span class="hero-dot active" data-index="0" aria-label="Slide 1"></span>
+           <span class="hero-dot" data-index="1" aria-label="Slide 2"></span>
+           <span class="hero-dot" data-index="2" aria-label="Slide 3"></span>
+           <span class="hero-dot" data-index="3" aria-label="Slide 4"></span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      
+     </div>
+    </div>
+   </section><!-- Award Categories -->
+   <section id="categories" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+     <div class="mb-12">
+      <div class="divider-line mb-6"></div>
+      <h2 class="heading-font text-4xl font-black text-blue-900 mb-2">Award Categories</h2>
+      <p class="text-gray-600 text-lg">Recognizing excellence across diverse sectors</p>
+     </div>
+     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="gov-card rounded-md p-6 hover:shadow-lg transition-all">
+       <div class="category-icon mb-4">
+        💡
+       </div>
+       <h3 class="heading-font text-lg font-bold text-blue-900 mb-2">Aatmanirbhar Innovation Award</h3>
+       <p class="text-gray-700 text-sm">For groundbreaking innovations that embody self-reliance</p>
+      </div>
+      <div class="gov-card rounded-md p-6 hover:shadow-lg transition-all">
+       <div class="category-icon mb-4">
+        🚀
+       </div>
+       <h3 class="heading-font text-lg font-bold text-blue-900 mb-2">Startup of the Year</h3>
+       <p class="text-gray-700 text-sm">Celebrating startups demonstrating exceptional growth</p>
+      </div>
+      <div class="gov-card rounded-md p-6 hover:shadow-lg transition-all">
+       <div class="category-icon mb-4">
+        📈
+       </div>
+       <h3 class="heading-font text-lg font-bold text-blue-900 mb-2">MSME Growth Champion</h3>
+       <p class="text-gray-700 text-sm">For MSMEs showing remarkable revenue growth</p>
+      </div>
+      <div class="gov-card rounded-md p-6 hover:shadow-lg transition-all">
+       <div class="category-icon mb-4">
+        👩‍💼
+       </div>
+       <h3 class="heading-font text-lg font-bold text-blue-900 mb-2">Women Entrepreneur Excellence</h3>
+       <p class="text-gray-700 text-sm">Honoring women leaders driving business success</p>
+      </div>
+      <div class="gov-card rounded-md p-6 hover:shadow-lg transition-all">
+       <div class="category-icon mb-4">
+        🌱
+       </div>
+       <h3 class="heading-font text-lg font-bold text-blue-900 mb-2">Sustainable Business Impact</h3>
+       <p class="text-gray-700 text-sm">For businesses leading sustainability initiatives</p>
+      </div>
+      <div class="gov-card rounded-md p-6 hover:shadow-lg transition-all">
+       <div class="category-icon mb-4">
+        💻
+       </div>
+       <h3 class="heading-font text-lg font-bold text-blue-900 mb-2">Tech &amp; Digital Transformation</h3>
+       <p class="text-gray-700 text-sm">Recognizing digital innovation excellence</p>
+      </div>
+      <div class="gov-card rounded-md p-6 hover:shadow-lg transition-all">
+       <div class="category-icon mb-4">
+        🌍
+       </div>
+       <h3 class="heading-font text-lg font-bold text-blue-900 mb-2">Export &amp; Global Impact</h3>
+       <p class="text-gray-700 text-sm">For businesses making India proud globally</p>
+      </div>
+      <div class="gov-card rounded-md p-6 hover:shadow-lg transition-all">
+       <div class="category-icon mb-4">
+        ❤️
+       </div>
+       <h3 class="heading-font text-lg font-bold text-blue-900 mb-2">Social Innovation &amp; Community</h3>
+       <p class="text-gray-700 text-sm">Honoring businesses creating social impact</p>
+      </div>
+      <div class="gov-card rounded-md p-6 hover:shadow-lg transition-all">
+       <div class="category-icon mb-4">
+        ⭐
+       </div>
+       <h3 class="heading-font text-lg font-bold text-blue-900 mb-2">Young Entrepreneur Rising Star</h3>
+       <p class="text-gray-700 text-sm">Celebrating young visionaries under 30</p>
+      </div>
+      <div class="gov-card rounded-md p-6 hover:shadow-lg transition-all">
+       <div class="category-icon mb-4">
+        🏡
+       </div>
+       <h3 class="heading-font text-lg font-bold text-blue-900 mb-2">Best Rural Enterprise</h3>
+       <p class="text-gray-700 text-sm">For enterprises driving rural development</p>
+      </div>
+     </div>
+    </div>
+   </section><!-- Timeline -->
+   <section id="timeline" class="py-20 bg-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+     <div class="mb-12">
+      <div class="divider-line mb-6"></div>
+      <h2 class="heading-font text-4xl font-black text-blue-900 mb-2">Event Timeline</h2>
+      <p class="text-gray-600 text-lg">Key milestones for the awards ceremony</p>
+     </div>
+     <div class="space-y-8">
+      <div class="flex gap-6">
+       <div class="flex flex-col items-center">
+        <div class="timeline-dot"></div>
+        <div class="timeline-line flex-1 mt-2" style="height: 60px;"></div>
+       </div>
+       <div class="gov-card rounded-md p-6 flex-1">
+        <div class="flex items-center gap-2 mb-2"><span class="text-2xl">      </span> <span class="gov-accent font-bold">February 14,  2026</span>
+        </div>
+        <h3 class="heading-font text-lg font-bold text-blue-900">Nominations Open</h3>
+        <p class="text-gray-600 text-sm mt-2">Start submitting your nominations</p>
+       </div>
+      </div>
+      <div class="flex gap-6">
+       <div class="flex flex-col items-center">
+        <div class="timeline-dot"></div>
+        <div class="timeline-line flex-1 mt-2" style="height: 60px;"></div>
+       </div>
+       <div class="gov-card rounded-md p-6 flex-1">
+        <div class="flex items-center gap-2 mb-2"><span class="text-2xl">⏰</span> <span class="gov-accent font-bold">February 28, 2026</span>
+        </div>
+        <h3 class="heading-font text-lg font-bold text-blue-900">Last Date for Nominations</h3>
+        <p class="text-gray-600 text-sm mt-2">Final deadline to submit entries</p>
+       </div>
+      </div>
+        <div class="flex gap-6">
+       <div class="flex flex-col items-center">
+        <div class="timeline-dot"></div>
+        <div class="timeline-line flex-1 mt-2" style="height: 60px;"></div>
+       </div>
+       <div class="gov-card rounded-md p-6 flex-1">
+        <div class="flex items-center gap-2 mb-2"><span class="text-2xl">👨‍⚖️</span> <span class="gov-accent font-bold"> March 05 - March 07, 2026</span>
+        </div>
+        <h3 class="heading-font text-lg font-bold text-blue-900">Jury Evaluation</h3>
+        <p class="text-gray-600 text-sm mt-2">Expert panel reviews finalists</p>
+       </div>
+      </div>
+      <div class="flex gap-6">
+       <div class="flex flex-col items-center">
+        <div class="timeline-dot"></div>
+        <div class="timeline-line flex-1 mt-2" style="height: 60px;"></div>
+       </div>
+       <div class="gov-card rounded-md p-6 flex-1">
+        <div class="flex items-center gap-2 mb-2"><span class="text-2xl">📋</span> <span class="gov-accent font-bold"> March 10, 2026</span>
+        </div>
+        <h3 class="heading-font text-lg font-bold text-blue-900">Shortlist Announcement</h3>
+        <p class="text-gray-600 text-sm mt-2">Finalists revealed to the public</p>
+       </div>
+      </div>
+    
+      <div class="flex gap-6">
+       <div class="flex flex-col items-center">
+        <div class="timeline-dot" style="background: #D4AF37; width: 24px; height: 24px;"></div>
+       </div>
+       <div class="gov-card rounded-md p-6 flex-1 bg-gradient-to-r from-blue-50 to-yellow-50">
+        <div class="flex items-center gap-2 mb-2"><span class="inline-block bg-white p-1 rounded align-middle"><img src="images/cimsme logo .png" alt="CIMSME Logo" class="w-8 h-8 object-contain block"></span> <span id="event-date-display" class="gov-accent font-bold">March 19, 2026</span>
+        </div>
+        <h3 class="heading-font text-lg font-bold text-blue-900">Awards Ceremony</h3>
+        <p class="text-gray-600 text-sm mt-2">Grand celebration of winners at <span id="venue-display">New Delhi, India</span></p>
+       </div>
+      </div>
+      
+     </div>
+    </div>
+   </section><!-- Jury Panel -->
+   <section id="jury" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+     <div class="mb-12">
+      <div class="divider-line mb-6"></div>
+      <h2 class="heading-font text-4xl font-black text-blue-900 mb-2">Distinguished Jury Panel</h2>
+      <p class="text-gray-600 text-lg">Our esteemed panel of experts and thought leaders</p>
+     </div>
+     <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="text-center p-8 bg-white rounded-xl border-t-4 border-yellow-500 shadow-lg hover:shadow-xl transition-shadow">
+       <img src="images/MMG Sir.png" alt="Shri Mukesh Mohan Gupta" class="jury-profile-img mx-auto mb-5 bg-gray-100">
+       <h3 class="heading-font font-bold text-blue-900 text-lg">Shri Mukesh Mohan Gupta</h3>
+       <p class="text-gray-600 text-sm mt-2">President, CIMSME</p>
+      </div>
+      <div class="text-center p-8 bg-white rounded-xl border-t-4 border-yellow-500 shadow-lg hover:shadow-xl transition-shadow">
+       <img src="images/Shri-Deepak-Verma.jpg" alt="Shri Deepak Verma" class="jury-profile-img mx-auto mb-5 bg-gray-100">
+       <h3 class="heading-font font-bold text-blue-900 text-lg">Shri Deepak Verma</h3>
+       <p class="text-gray-600 text-sm mt-1">Hon’ble Justice (Rtd), Supreme Court of India</p>
+      </div>
+      <div class="text-center p-8 bg-white rounded-xl border-t-4 border-yellow-500 shadow-lg hover:shadow-xl transition-shadow">
+       <img src="images/Shri-Surinder-singh.jpg" alt="Shri Surinder Singh Kohli" class="jury-profile-img mx-auto mb-5 bg-gray-100">
+       <h3 class="heading-font font-bold text-blue-900 text-lg">Shri Surinder Singh Kohli</h3>
+       <p class="text-gray-600 text-sm mt-2">Former CMD, Punjab National Bank &amp; IIFCL</p>
+      </div>
+      <div class="text-center p-8 bg-white rounded-xl border-t-4 border-yellow-500 shadow-lg hover:shadow-xl transition-shadow">
+       <img src="images/Dr.M-Narendra.jpeg" alt="Dr. M Narendra" class="jury-profile-img mx-auto mb-5 bg-gray-100">
+       <h3 class="heading-font font-bold text-blue-900 text-lg">Dr. M Narendra</h3>
+       <p class="text-gray-600 text-sm mt-2">Former CMD, Indian Overseas Bank</p>
+      </div>
+      <div class="text-center p-8 bg-white rounded-xl border-t-4 border-yellow-500 shadow-lg hover:shadow-xl transition-shadow">
+       <img src="images/Prof. R K Dubey.jpg" alt="Prof. R K Dubey" class="jury-profile-img mx-auto mb-5 bg-gray-100">
+       <h3 class="heading-font font-bold text-blue-900 text-lg">Prof. R K Dubey</h3>
+       <p class="text-gray-600 text-sm mt-2">Former CMD, Canara Bank</p>
+      </div>
+      <div class="text-center p-8 bg-white rounded-xl border-t-4 border-yellow-500 shadow-lg hover:shadow-xl transition-shadow">
+       <img src="images/Shri Navin Kumar Maini.jpg" alt="Shri Navin Kumar Maini" class="jury-profile-img mx-auto mb-5 bg-gray-100">
+       <h3 class="heading-font font-bold text-blue-900 text-lg">Shri Navin Kumar Maini</h3>
+       <p class="text-gray-600 text-sm mt-2">Former Dy Managing Director, SIDBI</p>
+      </div>
+      <div class="text-center p-8 bg-white rounded-xl border-t-4 border-yellow-500 shadow-lg hover:shadow-xl transition-shadow">
+       <img src="images/Shri H P Kumar.jpg" alt="Shri H P Kumar" class="jury-profile-img mx-auto mb-5 bg-gray-100">
+       <h3 class="heading-font font-bold text-blue-900 text-lg">Shri H P Kumar</h3>
+       <p class="text-gray-600 text-sm mt-2">Former CMD, National Small Industries Corporation</p>
+      </div>
+      <div class="text-center p-8 bg-white rounded-xl border-t-4 border-yellow-500 shadow-lg hover:shadow-xl transition-shadow">
+       <img src="images/Shri S Chandrashekhran.jpg" alt="Shri S Chandrashekhran" class="jury-profile-img mx-auto mb-5 bg-gray-100">
+       <h3 class="heading-font font-bold text-blue-900 text-lg">Shri S Chandrashekhran</h3>
+       <p class="text-gray-600 text-sm mt-2">Former Executive Director, UCO Bank</p>
+      </div>
+     </div>
+    </div>
+   </section><!-- Eligibility -->
+   <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+     <div class="mb-12">
+      <div class="divider-line mb-6"></div>
+      <h2 class="heading-font text-4xl font-black text-blue-900 mb-2">Who Should Apply?</h2>
+      <p class="text-gray-600 text-lg">If you're driving innovation and growth in India's business ecosystem</p>
+     </div>
+     <div class="grid md:grid-cols-2 gap-12">
+      <div class="space-y-4">
+       <div class="flex gap-4 p-4 gov-card rounded-md"><span class="text-2xl flex-shrink-0">✓</span>
+        <div>
+         <h4 class="font-bold text-blue-900">MSMEs registered in India</h4>
+         <p class="text-gray-600 text-sm">Micro, Small &amp; Medium Enterprises</p>
+        </div>
+       </div>
+       <div class="flex gap-4 p-4 gov-card rounded-md"><span class="text-2xl flex-shrink-0">✓</span>
+        <div>
+         <h4 class="font-bold text-blue-900">Innovative Startups</h4>
+         <p class="text-gray-600 text-sm">Technology &amp; innovation-driven ventures</p>
+        </div>
+       </div>
+       <div class="flex gap-4 p-4 gov-card rounded-md"><span class="text-2xl flex-shrink-0">✓</span>
+        <div>
+         <h4 class="font-bold text-blue-900">Fast-growing Enterprises</h4>
+         <p class="text-gray-600 text-sm">Businesses with strong growth trajectory</p>
+        </div>
+       </div>
+       <div class="flex gap-4 p-4 gov-card rounded-md"><span class="text-2xl flex-shrink-0">✓</span>
+        <div>
+         <h4 class="font-bold text-blue-900">Export-oriented Businesses</h4>
+         <p class="text-gray-600 text-sm">Companies with global footprint</p>
+        </div>
+       </div>
+      </div>
+      <div class="bg-blue-900 text-yellow-100 p-8 rounded-md">
+       <h3 class="heading-font text-2xl font-bold mb-6">Minimum Eligibility Criteria</h3>
+       <div class="space-y-4">
+        <div class="flex gap-3"><span class="gov-accent text-xl">📋</span>
+         <div>
+          <h4 class="font-bold"> MSME Registration </h4>
+          <p class="text-sm text-yellow-50">Valid business registration required</p>
+         </div>
+        </div>
+        <div class="flex gap-3"><span class="gov-accent text-xl">📆</span>
+         <div>
+          <h4 class="font-bold">1 Years of Operations</h4>
+          <p class="text-sm text-yellow-50">Optional for select categories</p>
+         </div>
+        </div>
+        <div class="flex gap-3"><span class="gov-accent text-xl">📁</span>
+         <div>
+          <h4 class="font-bold">Clear Documentation</h4>
+          <p class="text-sm text-yellow-50">Supporting documents required</p>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <!-- Application Form -->
+   <section id="apply" class="py-20 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+     <div class="mb-12">
+      <div class="divider-line mb-6"></div>
+      <h2 class="heading-font text-4xl font-black text-blue-900 mb-2">Nomination Form</h2>
+      <p class="text-gray-600 text-lg">Take the first step towards recognition</p>
+     </div>
+     <form id="nomination-form" class="bg-white rounded-xl p-8 md:p-10 border-l-4 border-yellow-500 shadow-lg"><!-- Progress Bar -->
+      <div class="mb-8">
+       <div class="flex justify-between text-sm font-bold text-blue-900 mb-2"><span>Form Progress</span> <span id="progress-text">0%</span>
+       </div>
+       <div class="h-2 bg-gray-200 rounded-full overflow-hidden">
+        <div id="progress-bar" class="h-full bg-gradient-to-r from-blue-900 to-yellow-500 transition-all duration-500" style="width: 0%"></div>
+       </div>
+      </div>
+      <div class="space-y-6">
+       <div class="grid md:grid-cols-2 gap-6 items-start">
+        <div class="md:col-span-2">
+         <label for="category" class="block text-sm font-bold text-blue-900 mb-2">Category Applying For *</label>
+         <select id="category" name="category" required class="nomination-field w-full px-4 py-3 rounded-md border-2 border-gray-300 focus:border-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-500/20">
+          <option value="">Select a category</option>
+          <option value="innovation">Aatmanirbhar Innovation Award</option>
+          <option value="startup">Startup of the Year</option>
+          <option value="growth">MSME Growth Champion</option>
+          <option value="women">Women Entrepreneur Excellence</option>
+          <option value="sustainable">Sustainable Business Impact</option>
+          <option value="tech">Tech &amp; Digital Transformation</option>
+          <option value="export">Export &amp; Global Impact</option>
+          <option value="social">Social Innovation &amp; Community</option>
+          <option value="young">Young Entrepreneur Rising Star</option>
+          <option value="rural">Best Rural Enterprise</option>
+         </select>
+        </div>
+        <div>
+         <label for="company-name" class="block text-sm font-bold text-blue-900 mb-2">Company Name *</label>
+         <input type="text" id="company-name" name="company_name" required minlength="2" class="nomination-field w-full px-4 py-3 rounded-md border-2 border-gray-300 focus:border-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-500/20" placeholder="Enter company name">
+        </div>
+        <div>
+         <label for="founder-name" class="block text-sm font-bold text-blue-900 mb-2">Founder/CEO Name *</label>
+         <input type="text" id="founder-name" name="founder_name" required minlength="2" class="nomination-field w-full px-4 py-3 rounded-md border-2 border-gray-300 focus:border-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-500/20" placeholder="Enter founder name">
+        </div>
+        <div>
+         <label for="email" class="block text-sm font-bold text-blue-900 mb-2">Email Address *</label>
+         <input type="email" id="email" name="email" required class="nomination-field w-full px-4 py-3 rounded-md border-2 border-gray-300 focus:border-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-500/20" placeholder="Enter email address">
+        </div>
+        <div>
+         <label for="mobile" class="block text-sm font-bold text-blue-900 mb-2">10-digit mobile number *</label>
+         <input type="tel" id="mobile" name="mobile" required maxlength="10" pattern="[0-9]{10}" class="nomination-field w-full px-4 py-3 rounded-md border-2 border-gray-300 focus:border-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-500/20" placeholder="e.g. 9876543210" inputmode="numeric" autocomplete="tel">
+        </div>
+        <div>
+         <label for="business-category" class="block text-sm font-bold text-blue-900 mb-2">Business Category *</label>
+         <select id="business-category" name="business_category" required class="nomination-field w-full px-4 py-3 rounded-md border-2 border-gray-300 focus:border-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-500/20">
+          <option value="">Select business category</option>
+          <option value="micro">Micro Enterprises</option>
+          <option value="small">Small Enterprises</option>
+          <option value="medium">Medium Enterprises</option>
+          <option value="listed">Listed Company</option>
+          <option value="startup">Startup</option>
+         </select>
+        </div>
+        <div>
+         <label for="revenue" class="block text-sm font-bold text-blue-900 mb-2">Annual Revenue of FY 2024-25 (Amount in Lakhs)</label>
+         <input type="text" id="revenue" name="revenue" class="nomination-field w-full px-4 py-3 rounded-md border-2 border-gray-300 focus:border-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-500/20" placeholder="Amount in Lakhs ">
+        </div>
+         <div>
+         <label for="net-profit" class="block text-sm font-bold text-blue-900 mb-2">Net Profit for FY 2024-25 (Amount in Lakhs)</label>
+         <input type="text" id="net-profit" name="net_profit" class="nomination-field w-full px-4 py-3 rounded-md border-2 border-gray-300 focus:border-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-500/20" placeholder="Amount in Lakhs ">
+        </div>
+         <div>
+         <label for="net-worth" class="block text-sm font-bold text-blue-900 mb-2">Net Worth for FY 2024-25 (Amount in Lakhs)</label>
+         <input type="text" id="net-worth" name="net_worth" class="nomination-field w-full px-4 py-3 rounded-md border-2 border-gray-300 focus:border-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-500/20" placeholder="Amount in Lakhs ">
+        </div>
+         <div>
+         <label for="credit-facilities" class="block text-sm font-bold text-blue-900 mb-2">Credit Facilities Availed, if any (Amount in Lakhs)</label>
+         <input type="text" id="credit-facilities" name="credit_facilities" class="nomination-field w-full px-4 py-3 rounded-md border-2 border-gray-300 focus:border-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-500/20" placeholder="Amount in Lakhs ">
+        </div>
+         <div>
+         <label for="udyam-registration-suffix" class="block text-sm font-bold text-blue-900 mb-2">Udyam Registration Number (Optional)</label>
+         <div id="udyam-wrapper" class="flex rounded-md border-2 border-gray-300 focus-within:border-yellow-500 focus-within:ring-2 focus-within:ring-yellow-500/20 overflow-hidden">
+          <span class="inline-flex items-center px-4 py-3 bg-gray-100 text-gray-600 border-r border-gray-300 font-medium select-none">UDYAM-</span>
+          <input type="text" id="udyam-registration-suffix" class="nomination-field flex-1 min-w-0 px-4 py-3 border-0 focus:ring-0 focus:outline-none rounded-none" placeholder="XX-00-0000000" autocomplete="off" aria-label="Udyam number part" aria-describedby="udyam-error">
+         </div>
+         <p id="udyam-error" class="mt-1.5 text-sm text-red-600 hidden" role="alert"></p>
+         <input type="hidden" id="udyam-registration" name="udyam_registration" value="">
+        </div>
+        <div class="md:col-span-2">
+         <label for="description" class="block text-sm font-bold text-blue-900 mb-2">Brief About Your Growth Story  *</label>
+         <textarea id="description" name="description" rows="4" required class="nomination-field w-full px-4 py-3 rounded-md border-2 border-gray-300 focus:border-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-500/20 resize-none" placeholder="Tell us about your Organisation, Growth Story, Innovation, Impact and Achievements..."></textarea>
+        </div>
+        
+       </div>
+      </div>
+      <div class="divider-line my-6"></div>
+      <div class="mb-6 flex items-start gap-3">
+       <input type="checkbox" id="terms-accept" name="terms_accept" required checked class="mt-1 h-4 w-4 rounded border-2 border-gray-300 text-yellow-600 focus:ring-yellow-500">
+       <label for="terms-accept" class="text-xs text-gray-600 leading-relaxed cursor-pointer">I hereby declare that the above information is true and correct to the best of my knowledge and belief. 
+        I undertake to provide any additional information sought by the Chamber of Indian Micro Small and Medium Enterprises and its knowledge partners from time to time.
+
+        <br>I understand that, in the event any information provided above is found to be incorrect, false, or misleading, the Chamber of Indian Micro Small and Medium Enterprises reserves the right to reject the nomination without any prior intimation to me.</label>
+      </div>
+      <div class="flex flex-col sm:flex-row gap-4"><a id="submit-pay-btn" href="#" class="flex-1 gov-button px-8 py-3 font-bold rounded-md text-lg text-center no-underline cursor-pointer inline-flex items-center justify-center" aria-label="Submit Nomination"> SUBMIT NOMINATION</a>
+      </div>
+     </form><!-- Success Message -->
+     <div id="success-message" class="hidden mt-8 bg-green-50 border-l-4 border-green-600 rounded-md p-8 text-center">
+      <div class="text-6xl mb-4">
+       ✓
+      </div>
+      <h3 class="heading-font text-2xl font-bold text-green-700 mb-2">Nomination Submitted Successfully!</h3>
+      <p class="text-gray-700">Thank you for your nomination. We'll be in touch soon.</p>
+     </div>
+    </div>
+   </section><!-- Sponsorship -->
+   <section id="sponsors" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+     <div class="mb-12">
+      <div class="divider-line mb-6"></div>
+      <h2 class="heading-font text-4xl font-black text-blue-900 mb-2">Sponsorship Opportunities</h2>
+      <p class="text-gray-600 text-lg">Partner with Us — Drive Growth, Visibility &amp; Impact</p>
+     </div>
+     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="gov-card rounded-xl p-8 border-t-4 border-yellow-500 shadow-lg hover:shadow-xl transition-shadow flex flex-col min-h-[320px]">
+       <div class="text-4xl mb-4 text-center">💎</div>
+       <h3 class="heading-font text-xl font-bold text-blue-900 text-center mb-5">Platinum</h3>
+       <ul class="space-y-2.5 text-sm text-gray-700 flex-1">
+        <li class="flex gap-2"><span class="gov-accent">✓</span> Logo on Main Stage</li>
+        <li class="flex gap-2"><span class="gov-accent">✓</span>Corporate Presentation during sideline of the Event </li>
+        <li class="flex gap-2"><span class="gov-accent">✓</span> Logo on Marketing Collaterals</li>
+        <li class="flex gap-2"><span class="gov-accent">✓</span> Speaking Opportunities </li>
+        <li class="flex gap-2"><span class="gov-accent">✓</span> Full Media Coverage</li>
+        <li class="flex gap-2"><span class="gov-accent">✓</span> 10 VIP Passes</li>
+       </ul>
+       <div class="mt-6 pt-6 flex justify-center">
+        <a id="sponsor-apply-platinum" href="#" target="_blank" rel="noopener noreferrer" class="gov-button px-10 py-2.5 font-bold rounded-md text-center text-sm inline-block no-underline min-w-[140px]">Apply</a>
+       </div>
+      </div>
+      <div class="gov-card rounded-xl p-8 border-t-4 border-yellow-500 shadow-lg hover:shadow-xl transition-shadow flex flex-col min-h-[320px]">
+       <div class="text-4xl mb-4 text-center">🥇</div>
+       <h3 class="heading-font text-xl font-bold text-blue-900 text-center mb-5">Gold</h3>
+       <ul class="space-y-2.5 text-sm text-gray-700 flex-1">
+        <li class="flex gap-2"><span class="gov-accent">✓</span> Logo on Main Stage </li>
+        <li class="flex gap-2"><span class="gov-accent">✓</span> Corporate Presentation during sideline of the Event </li>
+        <li class="flex gap-2"><span class="gov-accent">✓</span> Logo on Marketing Collaterals </li>
+        <li class="flex gap-2"><span class="gov-accent">✓</span> Full Media Coverage </li>
+        <li class="flex gap-2"><span class="gov-accent">✓</span> 5 VIP Passes </li>
+       </ul>
+       <div class="mt-6 pt-6 flex justify-center">
+        <a id="sponsor-apply-gold" href="#" target="_blank" rel="noopener noreferrer" class="gov-button px-10 py-2.5 font-bold rounded-md text-center text-sm inline-block no-underline min-w-[140px]">Apply</a>
+       </div>
+      </div>
+      <div class="gov-card rounded-xl p-8 border-t-4 border-yellow-500 shadow-lg hover:shadow-xl transition-shadow flex flex-col min-h-[320px]">
+       <div class="text-4xl mb-4 text-center">🥈</div>
+       <h3 class="heading-font text-xl font-bold text-blue-900 text-center mb-5">Silver</h3>
+       <ul class="space-y-2.5 text-sm text-gray-700 flex-1">
+        <li class="flex gap-2"><span class="gov-accent">✓</span> Logo on Main Stage </li>
+        <li class="flex gap-2"><span class="gov-accent">✓</span> Logo on Marketing Collaterals</li>
+        <li class="flex gap-2"><span class="gov-accent">✓</span> Full Media Coverage</li>
+        <li class="flex gap-2"><span class="gov-accent">✓</span> 2 VIP Passes </li>
+       </ul>
+       <div class="mt-6 pt-6 flex justify-center">
+        <a id="sponsor-apply-silver" href="#" target="_blank" rel="noopener noreferrer" class="gov-button px-10 py-2.5 font-bold rounded-md text-center text-sm inline-block no-underline min-w-[140px]">Apply</a>
+       </div>
+      </div>
+     </div>
+     
+    </div>
+   </section><!-- Contact -->
+   <section id="contact" class="py-20 gov-bg text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+     <div class="grid md:grid-cols-2 gap-12">
+      <div>
+       <h2 class="heading-font text-4xl font-black mb-6">Get in Touch</h2>
+       <p class="text-yellow-100 mb-8">Have questions? We're here to help you.</p>
+       <div class="space-y-6">
+        <div class="flex gap-4">
+         <div class="text-3xl">
+          📧
+         </div>
+         <div>
+          <h4 class="font-bold">Email</h4>
+          <p id="contact-email-display" class="text-yellow-100">info@msmehelpline.com</p>
+         </div>
+        </div>
+        <div class="flex gap-4">
+         <div class="text-3xl">
+          📞
+         </div>
+         <div>
+          <h4 class="font-bold">Phone</h4>
+          <p id="contact-phone-display" class="text-yellow-100">9582821470</p>
+         </div>
+        </div>
+        <div class="flex gap-4">
+         <div class="text-3xl">
+          📍
+         </div>
+         <div>
+          <h4 class="font-bold">Venue</h4>
+          <p id="venue-display-footer" class="text-yellow-100">India Habitat Centre  , New Delhi, India</p>
+         </div>
+        </div>
+       </div>
+       <br>
+       <div class="flex items-center space-x-6">
+        <a href="https://www.facebook.com/MSMEHelpline" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400 transition-colors" aria-label="Facebook">
+         <img src="images/facebook.png" alt="Facebook-logo" class="w-6 h-6 object-contain">
+        </a>
+        <a href="https://www.youtube.com/@MSMEHelpline" target="_blank" rel="noopener noreferrer" class="hover:text-red-400 transition-colors" aria-label="YouTube">
+         <img src="images/youtube.png" alt="YouTube-logo" class="w-6 h-6 object-contain">
+        </a>
+        <a href="https://www.instagram.com/msmehelpline/?hl=en" target="_blank" rel="noopener noreferrer" class="hover:text-pink-400 transition-colors" aria-label="Instagram">
+         <img src="images/instagram.png" alt="Instagram-logo" class="w-6 h-6 object-contain">
+        </a>
+        <a href="https://www.linkedin.com/company/msmehelpline/posts/?feedView=all" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400 transition-colors" aria-label="LinkedIn">
+         <img src="images/linkedin.png" alt="LinkedIn-logo" class="w-6 h-6 object-contain">
+        </a>
+       </div>
+
+
+      </div>
+      <div class="bg-white/10 backdrop-blur-sm rounded-md p-8">
+       <div class="text-6xl mb-4 text-center">
+        🗺️
+       </div>
+       <h3 class="heading-font text-2xl font-bold text-center mb-4">Event Venue</h3>
+       <p class="text-center text-yellow-100 mb-4">India Habitat Centre</p>
+       <p class="text-center text-yellow-100 mb-6">New Delhi, India</p>
+         <div class="text-center">
+            <a 
+                href="https://www.google.com/maps/place/India+Habitat+Centre+gate+no.1/@28.589681,77.22556,17z/data=!4m6!3m5!1s0x390ce30000b32d53:0x20b5b4c08dd0e3b9!8m2!3d28.5906557!4d77.2258177!16s%2Fg%2F11w9fjn7kv?entry=ttu&g_ep=EgoyMDI2MDIxMC4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="gov-button px-6 py-2 rounded-md inline-block">
+                View on Maps
+            </a>
+            </div>
+
+      </div>
+     </div>
+    </div>
+   </section><!-- Footer -->
+   <footer class="bg-blue-950 text-yellow-50 py-8 border-t-4 border-yellow-500">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+     <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+      <div class="flex items-center gap-3">
+       <div class="seal flex items-center justify-center p-1" style="width: 60px; height: 60px; font-size: 28px;">
+        <span class="w-full h-full rounded-full bg-white flex items-center justify-center p-1">
+         <img src="images/cimsme logo .png" alt="CIMSME Logo" class="w-full h-full object-contain">
+        </span>
+       </div>
+       <div>
+        <h3 class="heading-font font-bold">Aatmanirbhar MSME Awards 2026</h3>
+        <p class="text-xs">Chamber of Indian Micro, Small and Medium Enterprises</p>
+       </div>
+      </div>
+      <p class="text-sm">© 2026 All Rights Reserved | Chamber of Indian Micro, Small and Medium Enterprises </p>
+     </div>
+    </div>
+   </footer>
+  </div>
+  <script>
+    const defaultConfig = {
+      hero_title: 'Aatmanirbhar MSME & Startup Awards 2026',
+      hero_subtitle: 'Celebrating Grit, Innovation & Impact — India\'s Future Leaders!',
+      hero_tagline: '"Recognizing the Spirit of Self-Reliance, Innovation & Impact"',
+      event_date: 'March 19, 2026',
+      event_venue: 'New Delhi, India',
+      contact_email: 'info@indiansmechamber.com',
+      contact_phone: '+91 9582821470',
+      font_family: 'Merriweather',
+      font_size: 16
+    };
+
+    if (window.elementSdk) {
+      window.elementSdk.init({
+        defaultConfig,
+        onConfigChange: async (config) => {
+          const heroTitle = document.getElementById('hero-title');
+          if (heroTitle) {
+            heroTitle.textContent = config.hero_title || defaultConfig.hero_title;
+          }
+
+          const heroSubtitle = document.getElementById('hero-subtitle');
+          if (heroSubtitle) {
+            heroSubtitle.textContent = config.hero_subtitle || defaultConfig.hero_subtitle;
+          }
+
+          const heroTagline = document.getElementById('hero-tagline');
+          if (heroTagline) {
+            heroTagline.textContent = config.hero_tagline || defaultConfig.hero_tagline;
+          }
+
+          const eventDateDisplay = document.getElementById('event-date-display');
+          if (eventDateDisplay) {
+            eventDateDisplay.textContent = config.event_date || defaultConfig.event_date;
+          }
+
+          const venueDisplay = document.getElementById('venue-display');
+          if (venueDisplay) {
+            venueDisplay.textContent = config.event_venue || defaultConfig.event_venue;
+          }
+
+          const contactEmailDisplay = document.getElementById('contact-email-display');
+          if (contactEmailDisplay) {
+            contactEmailDisplay.textContent = config.contact_email || defaultConfig.contact_email;
+          }
+
+          const contactPhoneDisplay = document.getElementById('contact-phone-display');
+          if (contactPhoneDisplay) {
+            contactPhoneDisplay.textContent = config.contact_phone || defaultConfig.contact_phone;
+          }
+
+          const fontFamily = config.font_family || defaultConfig.font_family;
+          document.querySelectorAll('.heading-font, h1, h2, h3, h4, h5, h6').forEach(el => {
+            el.style.fontFamily = `${fontFamily}, Merriweather, serif`;
+          });
+
+          const baseSize = config.font_size || defaultConfig.font_size;
+          document.body.style.fontSize = `${baseSize}px`;
+        },
+        mapToCapabilities: (config) => ({
+          recolorables: [],
+          borderables: [],
+          fontEditable: {
+            get: () => config.font_family || defaultConfig.font_family,
+            set: (value) => {
+              config.font_family = value;
+              window.elementSdk.setConfig({ font_family: value });
+            }
+          },
+          fontSizeable: {
+            get: () => config.font_size || defaultConfig.font_size,
+            set: (value) => {
+              config.font_size = value;
+              window.elementSdk.setConfig({ font_size: value });
+            }
+          }
+        }),
+        mapToEditPanelValues: (config) => new Map([
+          ['hero_title', config.hero_title || defaultConfig.hero_title],
+          ['hero_subtitle', config.hero_subtitle || defaultConfig.hero_subtitle],
+          ['hero_tagline', config.hero_tagline || defaultConfig.hero_tagline],
+          ['event_date', config.event_date || defaultConfig.event_date],
+          ['event_venue', config.event_venue || defaultConfig.event_venue],
+          ['contact_email', config.contact_email || defaultConfig.contact_email],
+          ['contact_phone', config.contact_phone || defaultConfig.contact_phone]
+        ])
+      });
+    }
+
+    (function heroSlideshow() {
+      var container = document.getElementById('hero-slideshow');
+      var card = document.getElementById('hero-slideshow-card');
+      if (!container || !card) return;
+      var slides = container.querySelectorAll('.hero-slide');
+      var dots = container.querySelectorAll('.hero-dot');
+      if (slides.length === 0) return;
+      var index = 0;
+      function setCardRatio(img) {
+        if (!img || !img.complete || !img.naturalWidth) return;
+        card.style.aspectRatio = img.naturalWidth + ' / ' + img.naturalHeight;
+      }
+      function goTo(i) {
+        slides[index].classList.remove('active');
+        if (dots[index]) dots[index].classList.remove('active');
+        index = (i + slides.length) % slides.length;
+        slides[index].classList.add('active');
+        if (dots[index]) dots[index].classList.add('active');
+        setCardRatio(slides[index]);
+      }
+      slides.forEach(function(img) {
+        if (img.complete) setCardRatio(img);
+        else img.addEventListener('load', function() {
+          if (img.classList.contains('active')) setCardRatio(img);
+        });
+      });
+      dots.forEach(function(dot, i) {
+        dot.addEventListener('click', function() { goTo(i); });
+      });
+      setInterval(function() { goTo(index + 1); }, 3000);
+    })();
+
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+
+    const form = document.getElementById('nomination-form');
+    const progressBar = document.getElementById('progress-bar');
+    const progressText = document.getElementById('progress-text');
+    const requiredFields = form.querySelectorAll('[required]');
+    const businessCategorySelect = document.getElementById('business-category');
+    const submitPayBtn = document.getElementById('submit-pay-btn');
+    const mobileInput = document.getElementById('mobile');
+
+    /** Payment URLs per business category – replace with your gateway links for production */
+    const PAYMENT_LINKS = {
+      micro: 'https://pages.razorpay.com/pl_QtGmCPYXN9wUAV/view',
+      small: 'https://pages.razorpay.com/pl_SFZPXVmhZ2gPL5/view',
+      medium: 'https://pages.razorpay.com/pl_SFZQI4j7sk14BA/view',
+      listed: 'https://pages.razorpay.com/pl_SFZXePzNlE1Lyg/view',
+      startup: 'https://pages.razorpay.com/pl_SFZY6wIMLcHUmL/view'
+    };
+
+    /** Sponsorship Apply – external payment links (replace with your URLs) */
+    const SPONSOR_APPLY_LINKS = {
+      platinum: 'https://rzp.io/rzp/TP6lTrg',
+      gold: 'https://rzp.io/rzp/ACv5vHLA',
+      silver: 'https://rzp.io/rzp/vKeFL8Ed'
+    };
+    
+    (function setSponsorApplyLinks() {
+      var ids = { 'sponsor-apply-platinum': 'platinum', 'sponsor-apply-gold': 'gold', 'sponsor-apply-silver': 'silver' };
+      Object.keys(ids).forEach(function(id) {
+        var el = document.getElementById(id);
+        var key = ids[id];
+        if (el && SPONSOR_APPLY_LINKS[key]) el.href = SPONSOR_APPLY_LINKS[key];
+      });
+    })();
+
+    function getPaymentLink() {
+      const value = businessCategorySelect && businessCategorySelect.value;
+      return (value && PAYMENT_LINKS[value]) ? PAYMENT_LINKS[value] : '#';
+    }
+
+    function updateSubmitPayHref() {
+      if (submitPayBtn) submitPayBtn.href = getPaymentLink();
+    }
+
+    if (mobileInput) {
+      mobileInput.addEventListener('input', function() {
+        this.value = this.value.replace(/\D/g, '').slice(0, 10);
+      });
+    }
+
+    if (businessCategorySelect && submitPayBtn) {
+      businessCategorySelect.addEventListener('change', updateSubmitPayHref);
+      updateSubmitPayHref();
+    }
+
+    var UDYAM_ERROR_MSG = 'Enter a valid Udyam number (e.g. XX-00-0000000).';
+    function syncUdyamFromSuffix() {
+      var suffix = document.getElementById('udyam-registration-suffix');
+      var hidden = document.getElementById('udyam-registration');
+      if (suffix && hidden) {
+        var s = (suffix.value || '').trim();
+        hidden.value = s ? 'UDYAM-' + s : '';
+      }
+    }
+    function updateUdyamErrorDisplay() {
+      var hidden = document.getElementById('udyam-registration');
+      var errEl = document.getElementById('udyam-error');
+      var wrapper = document.getElementById('udyam-wrapper');
+      if (!hidden || !errEl || !wrapper) return;
+      var val = (hidden.value || '').trim();
+      var valid = val === '' || isValidUdyam(val);
+      if (!valid && val !== '') {
+        errEl.textContent = UDYAM_ERROR_MSG;
+        errEl.classList.remove('hidden');
+        wrapper.classList.remove('border-gray-300');
+        wrapper.classList.add('border-red-500');
+      } else {
+        errEl.textContent = '';
+        errEl.classList.add('hidden');
+        wrapper.classList.remove('border-red-500');
+        wrapper.classList.add('border-gray-300');
+      }
+    }
+    function isValidUdyam(value) {
+      var s = (value || '').trim().toUpperCase();
+      if (s === '') return true;
+      var newFormat = /^UDYAM-[A-Z]{2}-[0-9]{2}-[0-9]{7}$/;
+      var legacyFormat = /^[A-Z]{2}[0-9]{2}[A-Z][0-9]{7}$/;
+      return newFormat.test(s) || legacyFormat.test(s);
+    }
+    function isValidAmount(value) {
+      var s = (value || '').trim();
+      if (s === '') return true;
+      return /^\d+(\.\d+)?$/.test(s);
+    }
+    function isValidEmail(value) {
+      var s = (value || '').trim();
+      if (s === '') return false;
+      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(s);
+    }
+    function validateNominationForm() {
+      syncUdyamFromSuffix();
+      var companyName = document.getElementById('company-name');
+      var founderName = document.getElementById('founder-name');
+      var emailInput = document.getElementById('email');
+      var description = document.getElementById('description');
+      var udyamInput = document.getElementById('udyam-registration');
+      var revenue = document.getElementById('revenue');
+      var netProfit = document.getElementById('net-profit');
+      var netWorth = document.getElementById('net-worth');
+      var creditFacilities = document.getElementById('credit-facilities');
+      var allValid = true;
+      function setValidity(el, valid, message) {
+        el.setCustomValidity(valid ? '' : (message || 'Invalid'));
+        if (!valid) allValid = false;
+      }
+      if (companyName) {
+        var cn = (companyName.value || '').trim();
+        setValidity(companyName, cn.length >= 2, 'Company name must be at least 2 characters.');
+      }
+      if (founderName) {
+        var fn = (founderName.value || '').trim();
+        setValidity(founderName, fn.length >= 2, 'Founder/CEO name must be at least 2 characters.');
+      }
+      if (emailInput) {
+        setValidity(emailInput, isValidEmail(emailInput.value), 'Please enter a valid email address.');
+      }
+      if (description) {
+        var desc = (description.value || '').trim();
+        setValidity(description, desc.length > 0, 'Please enter your growth story.');
+      }
+      if (mobileInput) {
+        var mobile = (mobileInput.value || '').replace(/\D/g, '');
+        setValidity(mobileInput, mobile.length === 10, 'Enter a valid 10-digit mobile number.');
+      }
+      if (udyamInput) {
+        setValidity(udyamInput, isValidUdyam(udyamInput.value), UDYAM_ERROR_MSG);
+        updateUdyamErrorDisplay();
+      }
+      if (revenue) setValidity(revenue, isValidAmount(revenue.value), 'Enter a valid amount (numbers only).');
+      if (netProfit) setValidity(netProfit, isValidAmount(netProfit.value), 'Enter a valid amount (numbers only).');
+      if (netWorth) setValidity(netWorth, isValidAmount(netWorth.value), 'Enter a valid amount (numbers only).');
+      if (creditFacilities) setValidity(creditFacilities, isValidAmount(creditFacilities.value), 'Enter a valid amount (numbers only).');
+      var termsAccept = document.getElementById('terms-accept');
+      if (termsAccept) setValidity(termsAccept, termsAccept.checked, 'You must accept the terms and conditions to submit.');
+      return allValid && form.checkValidity();
+    }
+    function clearCustomValidity(el) {
+      if (el && el.setCustomValidity) el.setCustomValidity('');
+    }
+    function validateField(id) {
+      var el = document.getElementById(id);
+      if (!el) return;
+      var companyName = document.getElementById('company-name');
+      var founderName = document.getElementById('founder-name');
+      var emailInput = document.getElementById('email');
+      var description = document.getElementById('description');
+      var udyamInput = document.getElementById('udyam-registration');
+      var revenue = document.getElementById('revenue');
+      var netProfit = document.getElementById('net-profit');
+      var netWorth = document.getElementById('net-worth');
+      var creditFacilities = document.getElementById('credit-facilities');
+      if (id === 'company-name' && companyName) {
+        var cn = (companyName.value || '').trim();
+        companyName.setCustomValidity(cn.length >= 2 ? '' : 'Company name must be at least 2 characters.');
+      } else if (id === 'founder-name' && founderName) {
+        var fn = (founderName.value || '').trim();
+        founderName.setCustomValidity(fn.length >= 2 ? '' : 'Founder/CEO name must be at least 2 characters.');
+      } else if (id === 'email' && emailInput) {
+        emailInput.setCustomValidity(isValidEmail(emailInput.value) ? '' : 'Please enter a valid email address.');
+      } else if (id === 'description' && description) {
+        var desc = (description.value || '').trim();
+        description.setCustomValidity(desc.length > 0 ? '' : 'Please enter your growth story.');
+      } else if (id === 'mobile' && mobileInput) {
+        var mobile = (mobileInput.value || '').replace(/\D/g, '');
+        mobileInput.setCustomValidity(mobile.length === 10 ? '' : 'Enter a valid 10-digit mobile number.');
+      } else if (id === 'udyam-registration' && udyamInput) {
+        udyamInput.setCustomValidity(isValidUdyam(udyamInput.value) ? '' : 'Enter a valid Udyam number (e.g. UDYAM-XX-00-0000000 or legacy 12-digit UAM).');
+      } else if (id === 'udyam-registration-suffix') {
+        syncUdyamFromSuffix();
+        var hiddenUdyam = document.getElementById('udyam-registration');
+        if (hiddenUdyam) hiddenUdyam.setCustomValidity(isValidUdyam(hiddenUdyam.value) ? '' : UDYAM_ERROR_MSG);
+        updateUdyamErrorDisplay();
+      } else if (id === 'revenue' && revenue) {
+        revenue.setCustomValidity(isValidAmount(revenue.value) ? '' : 'Enter a valid amount (numbers only).');
+      } else if (id === 'net-profit' && netProfit) {
+        netProfit.setCustomValidity(isValidAmount(netProfit.value) ? '' : 'Enter a valid amount (numbers only).');
+      } else if (id === 'net-worth' && netWorth) {
+        netWorth.setCustomValidity(isValidAmount(netWorth.value) ? '' : 'Enter a valid amount (numbers only).');
+      } else if (id === 'credit-facilities' && creditFacilities) {
+        creditFacilities.setCustomValidity(isValidAmount(creditFacilities.value) ? '' : 'Enter a valid amount (numbers only).');
+      }
+    }
+    [ 'company-name', 'founder-name', 'email', 'description', 'mobile', 'udyam-registration-suffix', 'revenue', 'net-profit', 'net-worth', 'credit-facilities', 'terms-accept' ].forEach(function(id) {
+      var el = document.getElementById(id);
+      if (el) {
+        el.addEventListener('input', function() {
+          if (id === 'udyam-registration-suffix') { syncUdyamFromSuffix(); clearCustomValidity(document.getElementById('udyam-registration')); updateUdyamErrorDisplay(); }
+          else clearCustomValidity(el);
+        });
+        el.addEventListener('change', function() {
+          if (id === 'udyam-registration-suffix') { syncUdyamFromSuffix(); clearCustomValidity(document.getElementById('udyam-registration')); updateUdyamErrorDisplay(); }
+          else clearCustomValidity(el);
+        });
+        el.addEventListener('blur', function() {
+          validateField(id);
+          if (id === 'udyam-registration-suffix') {
+            var hidden = document.getElementById('udyam-registration');
+            if (hidden && !hidden.validity.valid) {
+              hidden.reportValidity();
+              document.getElementById('udyam-registration-suffix').focus();
+            }
+          } else {
+            var field = document.getElementById(id);
+            if (field && !field.validity.valid) field.reportValidity();
+          }
+        });
+      }
+    });
+    if (submitPayBtn) {
+      submitPayBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        if (!validateNominationForm()) {
+          form.reportValidity();
+          var firstInvalid = form.querySelector(':invalid');
+          if (firstInvalid) {
+            if (firstInvalid.id === 'udyam-registration') document.getElementById('udyam-registration-suffix').focus();
+            else firstInvalid.focus();
+          }
+          return;
+        }
+        var href = getPaymentLink();
+        if (!href || href === '#') return;
+        syncUdyamFromSuffix();
+        var fd = new FormData(form);
+        submitPayBtn.setAttribute('disabled', 'disabled');
+        fetch('api/submit_nomination.php', { method: 'POST', body: fd })
+          .then(function(r) { return r.json().then(function(j) { return { ok: r.ok, json: j }; }); })
+          .then(function(o) {
+            if (o.ok && o.json && o.json.success) {
+              window.location.href = href;
+            } else {
+              submitPayBtn.removeAttribute('disabled');
+              alert(o.json && o.json.error ? o.json.error : 'Submission failed. Please try again.');
+            }
+          })
+          .catch(function() {
+            submitPayBtn.removeAttribute('disabled');
+            alert('Submission failed. Please try again.');
+          });
+      });
+    }
+
+    function updateProgress() {
+      let filledCount = 0;
+      requiredFields.forEach(field => {
+        if (field.value.trim() !== '') {
+          filledCount++;
+        }
+      });
+      const percentage = Math.round((filledCount / requiredFields.length) * 100);
+      progressBar.style.width = `${percentage}%`;
+      progressText.textContent = `${percentage}%`;
+    }
+
+    requiredFields.forEach(field => {
+      field.addEventListener('input', updateProgress);
+      field.addEventListener('change', updateProgress);
+    });
+
+    form.addEventListener('reset', () => {
+      setTimeout(() => {
+        updateProgress();
+        updateSubmitPayHref();
+      }, 0);
+    });
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+  </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9cd204ab9005a6bd',t:'MTc3MDk2MTUxMi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

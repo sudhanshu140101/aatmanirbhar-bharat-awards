@@ -1,0 +1,11 @@
+# Database credentials - copy config.example.php to config.php and set your values
+config.php
+admin/config.php
+
+# Uploaded / binary assets
+images/
+uploads/
+
+# Optional: uncomment if you use these later
+# vendor/
+# .env
