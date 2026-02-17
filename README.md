@@ -28,4 +28,19 @@ A nomination and admin platform for the Aatmanirbhar Bharat Awards — recognizi
 - **Database:** MySQL  
 - **Config:** `config.php` (not in repo; use example configs)
 
-   
+## Project Structure
+
+   ├── index.html              # Main landing & nomination form
+├── config.php              # DB config (create from config.example.php)
+├── config.example.php      # Example config (safe to commit)
+├── api/
+│   ├── submit_nomination.php
+│   └── update_payment.php
+├── admin/
+│   ├── index.php           # Admin dashboard
+│   ├── login.php
+│   ├── logout.php
+│   └── config.php          # Create from admin/config.example.php
+├── sql/
+│   └── schema.sql          # Database schema
+└── images/                 # Uploads (not in repo)
