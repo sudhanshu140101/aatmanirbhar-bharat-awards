@@ -4,7 +4,7 @@
 
 A nomination and admin platform for the Aatmanirbhar Bharat Awards — recognizing excellence in MSMEs and startups across innovation, growth, sustainability, and social impact.
 
----
+
 
 ## Live site
 
@@ -19,7 +19,7 @@ A nomination and admin platform for the Aatmanirbhar Bharat Awards — recognizi
 - **Admin panel** — Login, view/manage nominations, and related admin tasks.
 - **PHP + MySQL** — Simple, server-side stack with PDO.
 
----
+
 
 ## Tech stack
 
@@ -43,4 +43,4 @@ A nomination and admin platform for the Aatmanirbhar Bharat Awards — recognizi
 │   └── config.php          # Create from admin/config.example.php
 ├── sql/
 │   └── schema.sql          # Database schema
-└── images/                 # Uploads (not in repo)
+└── images/                 # Uploads 
