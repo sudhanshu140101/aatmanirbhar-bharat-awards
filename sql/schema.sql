@@ -30,5 +30,3 @@ CREATE TABLE IF NOT EXISTS nominations (
     INDEX idx_payment (payment_verified)
 );
 
-INSERT INTO admin_users (username, password) VALUES ('Admin_user', '$2y$10$AjLLVA8XiVtV.V5EuvbireIQ2pMtY8.D0c08bYHP9no.X.ErMVOku')
-ON DUPLICATE KEY UPDATE id=id;
