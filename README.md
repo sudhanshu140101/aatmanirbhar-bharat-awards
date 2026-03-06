@@ -6,7 +6,7 @@ A nomination and admin platform for the Aatmanirbhar Bharat Awards — recognizi
 
 
 
-## Live site
+## Live site -
 
 - **Website:** [https://aatmanirbharbharatawards.indiansmechamber.com/](https://aatmanirbharbharatawards.indiansmechamber.com/)
 - **Admin panel:** [https://aatmanirbharbharatawards.indiansmechamber.com/admin/index.php](https://aatmanirbharbharatawards.indiansmechamber.com/admin/index.php)
