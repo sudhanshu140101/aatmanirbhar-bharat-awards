@@ -1,7 +1,6 @@
 <?php
 /**
- * Database configuration - copy this file to config.php and set your values.
- * Do not commit config.php (it is in .gitignore).
+ 
  */
 define('DB_HOST', 'localhost');
 define('DB_NAME', 'your_database_name');
